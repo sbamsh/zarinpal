@@ -149,6 +149,80 @@ header {
     }
 }
 
+#show-more-menu {
+    position: relative;
+}
+
+#show-more-menu ul {
+    position: absolute;
+    top: 0;
+    left: -35px;
+    background-color: #fff;
+    border-top: 5px solid #f8b88b;
+    border-radius: 12px;
+    padding-top:20px;
+    padding-bottom: 20px;
+    margin-top: 23px;
+    list-style: none;
+    width: 123px;
+    display: none;
+}
+
+#show-more-menu li {
+    margin: 0;
+    padding: 10px 20px;
+    font-size: .8rem;
+    color: black;
+
+}
+
+#show-more-menu li:hover {
+    background-color: rgba(232, 239, 254, 0.6);
+}
+
+#show-product-menu {
+    position: relative;
+}
+
+.product-menu {
+    position: absolute;
+    top: 0;
+    left: -135px;
+    background-color: #fff;
+    display: none;
+    justify-content: flex-start;
+    width: 372px;
+    border-top: 5px solid #f8b88b;
+    border-radius: 12px;
+    padding-top: 5px;
+    margin-top: 23px;
+}
+
+.product-menu a p:first-child {
+    color: black;
+    font: 0.95rem;
+}
+
+.product-menu a p:last-child {
+    color: black;
+    font-size: 0.7rem;
+}
+
+.product-menu a {
+    margin: 10px;
+    display: block;
+    padding: 10px;
+    border: 5px;
+}
+
+@keyframes identifier {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
 
 /* responsive */
 
