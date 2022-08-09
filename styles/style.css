@@ -376,6 +376,79 @@ header {
 }
 
 
+.attributes {
+    width: 1170px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.definition {
+    width: 35%;
+    margin-top: 50px;
+}
+
+.items {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 60%;
+    padding: 30px;
+}
+
+.items img {
+    width:60px;
+    height: 60px;
+}
+
+.items .item {
+    padding: 18px 25px 20px 0px;
+} 
+
+.items .item div {
+    display: flex;
+    align-items: center;
+}
+
+.items h4 {
+    font-size: 1.5rem;
+    margin-right: 20px;
+}
+
+.items p {
+    margin: 20px 0 20px 10px;
+    font-size: 1rem;
+    color: #303030;
+    line-height: 36px;
+}
+
+.definition h3 {
+    font-size: 2rem;
+}
+
+.definition p {
+    width: 85%;
+    margin-top: 40px;
+    line-height: 40px;
+    font-size: 1rem;
+}
+
+.first-item {
+    border-left: 1px solid #e0e4e7;
+}
+
+.second-item {
+    border-bottom: 1px solid #e0e4e7;
+}
+
+.third-item {
+    border-top: 1px solid #e0e4e7;
+}
+
+.fourth-item {
+    border-right: 1px solid #e0e4e7;
+}
+
+
 /* responsive */
 
 @media (max-width: 1200px) {
@@ -391,6 +464,30 @@ header {
     }
     .online-payment {
         width: 940px;
+    }
+    .attributes {
+        width: 924px;
+        padding: 0 8px;
+        flex-direction: column;
+    }
+    .definition {
+        width: 100%;
+        margin-top: 40px;
+    }
+
+    .definition p {
+        width: 100%;
+        margin-top: 30px;
+    }
+    .first-item, .second-item, .third-item, .fourth-item {
+        border: none;
+    }
+    .items {
+        width: 90%;
+        padding: 30px;
+    }
+    .items .item {
+        padding: 18px 0 20px 50px;
     }
 }
 
@@ -442,6 +539,10 @@ header {
     .section-text {
         width: 95%;
     }
+    .attributes {
+        width:  auto;
+        padding: 0 35px;
+    }
 }
 
 @media (max-width: 768px) {
@@ -468,6 +569,17 @@ header {
         width: 460px;
         height: 480px;
     }
+   .definition h3 {
+
+    font-size: 1.6rem;
+   }
+   .items {
+    width: 100%;
+    padding: 50px 0;
+   }
+   .item .item {
+    padding: 18px 0 20px 20px;
+   }
 }
 
 @media (max-width: 575px) {
@@ -491,6 +603,13 @@ header {
 
     .section-text h3 {
         font-size: 1.5rem;
+    }
+    .items {
+        padding: 50px 0;
+        grid-template-columns: 1fr;
+    }
+    .items .item {
+        padding: 18px 0;
     }
 
 }
