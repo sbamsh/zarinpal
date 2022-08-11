@@ -237,8 +237,8 @@ header {
     line-height: 2.5rem;
 }
 
-.banner-image {
-    width: 1000px;
+.banner-image img {
+    width: 500px;
 }
 
 .banner-button {
